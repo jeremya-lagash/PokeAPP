@@ -4,10 +4,11 @@ import List from "../components/List";
 import AppNav from "../components/AppNav";
 import Footer from "../components/Footer";
 import { Box } from "@material-ui/core";
+import PaginationLink from "../components/Pagination";
 
 class PokeListContainer extends Component {
   state = {
-    pokeData: []
+    pokeData: [],
   };
 
   componentDidMount() {
@@ -20,11 +21,11 @@ class PokeListContainer extends Component {
           "&limit=" +
           count2
       )
-      .then(res => {
+      .then((res) => {
         const pokeData = res.data.results;
         this.setState({ pokeData });
       })
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
       });
   }
@@ -38,7 +39,7 @@ class PokeListContainer extends Component {
           <Box className="CardOpacity">
             <List pokedata={pokeData} />
           </Box>
-
+          <PaginationLink />
           <Footer />
         </div>
       </>
