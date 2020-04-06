@@ -9,49 +9,12 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 2s alternate-reverse;
+    animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.Footer {
-  text-align: center;
-  height: 15vmin;
-  margin: "4em";
-  background: yellow;
-}
-
-.eldiv {
-  background-color: gray;
-  border-radius: 60px;
-}
-
-.CardOpacity {
-  opacity: 0.88;
-}
-
-.Background-Img1 {
-  background-image: url("./resources/background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.Background-Img2 {
-  background-image: url("./resources/background2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.Background-Img3 {
-  background-image: url("./resources/background3.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
 .App-header {
-  background: linear-gradient(to bottom, yellow, black);
+  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -63,10 +26,6 @@
 
 .App-link {
   color: #61dafb;
-}
-
-.AppNav {
-  background-color: yellow;
 }
 
 @keyframes App-logo-spin {
